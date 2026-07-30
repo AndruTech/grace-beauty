@@ -71,8 +71,8 @@ export function SiteFooter() {
         <div className="mt-16 flex flex-col gap-6 border-t border-border pt-8 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="font-serif text-2xl font-medium tracking-tight text-foreground">
-              GRÂCE
-              <span className="ml-2 text-xs font-light uppercase tracking-[0.3em] text-muted-foreground">
+              GRÂCE<br></br>
+              <span className="ml-2 text-xs font-light uppercase tracking-[0.2em] text-muted-foreground">
                 Makeup & Hair
               </span>
             </p>
