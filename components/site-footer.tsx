@@ -71,9 +71,9 @@ export function SiteFooter() {
         <div className="mt-16 flex flex-col gap-6 border-t border-border pt-8 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="font-serif text-2xl font-medium tracking-tight text-foreground">
-              Grace Beauty
+              GRÂCE
               <span className="ml-2 text-xs font-light uppercase tracking-[0.3em] text-muted-foreground">
-                by Tat
+                Makeup & Hair
               </span>
             </p>
             <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
@@ -81,7 +81,7 @@ export function SiteFooter() {
             </p>
           </div>
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Grace Beauty by Tat. All rights reserved.
+            &copy; {new Date().getFullYear()} GRÂCE. All rights reserved.
           </p>
         </div>
       </div>
