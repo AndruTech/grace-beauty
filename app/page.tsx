@@ -1,3 +1,4 @@
+import { WhatsAppButton} from '@/components/whatsapp-button'
 import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
 import { Services } from '@/components/services'
@@ -24,6 +25,7 @@ export default function Home() {
         <Newsletter />
       </main>
       <SiteFooter />
+      <WhatsAppButton />
     </div>
   )
 }
