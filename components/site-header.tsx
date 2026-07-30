@@ -47,10 +47,10 @@ export function SiteHeader() {
         {/* Logo */}
         <a href="#top" className="flex flex-col leading-none">
           <span className="font-serif text-2xl font-medium tracking-tight text-foreground">
-            Grace Beauty
+            GRÂCE
           </span>
           <span className="text-[0.65rem] font-light uppercase tracking-[0.35em] text-muted-foreground">
-            by Tat
+            Makeup & Hair
           </span>
         </a>
 
