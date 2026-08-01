@@ -16,7 +16,7 @@ const COLUMNS = [
 ]
 
 const SOCIALS = [
-  { icon: InstagramIcon, label: 'Instagram', href: 'https://instagram.com' },
+  { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/maakeupbytat?igsh=MWhwcGttZ3U2amtteQ==' },
   { icon: TikTokIcon, label: 'TikTok', href: 'https://tiktok.com' },
   { icon: YouTubeIcon, label: 'YouTube', href: 'https://youtube.com' },
   { icon: WhatsAppIcon, label: 'WhatsApp', href: 'https://wa.me/' },

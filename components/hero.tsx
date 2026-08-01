@@ -56,7 +56,7 @@ export function Hero() {
         <div className="relative order-1 lg:order-2">
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <img
-              src="/images/Img_hero.JPEG"
+              src="/images/img-hero.jpeg"
               alt="Professional makeup artist portrait with soft glowing makeup"
               className="h-full w-full object-cover"
             />
