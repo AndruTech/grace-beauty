@@ -1,7 +1,7 @@
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-16 lg:px-10 lg:py-24">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-6 lg:grid-cols-2 lg:gap-16 lg:px-10 lg:py-12">
         {/* Text */}
         <div className="order-2 lg:order-1">
           <p className="mb-6 flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.3em] text-gold">
@@ -12,7 +12,7 @@ export function Hero() {
             Where artistry meets grace.
           </h1>
           <p className="mt-8 max-w-md text-base leading-relaxed text-muted-foreground">
-            Professional makeup &amp; hair services in Melbourne. Organic beauty
+            Professional makeup &amp; Hair Styling in Melbourne. Organic beauty
             products. Online courses crafted to elevate your everyday ritual.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">

@@ -1,0 +1,67 @@
+
+
+Sun Aug  2 14:16:43 2026
+Command line: TestDisk
+
+TestDisk 7.3-WIP, Data Recovery Utility, April 2025
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Darwin, kernel 25.6.0 (Darwin Kernel Version 25.6.0: Sat Jul 11 15:27:02 PDT 2026; root:xnu-12377.161.13~4/RELEASE_ARM64_T8112) x86_64
+Compiler: GCC 4.2
+ext2fs lib: 1.46.2, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 5.7
+Hard disk list
+Disk /dev/disk4 - 4000 GB / 3725 GiB - 7813969920 sectors, sector size=512
+Disk /dev/rdisk1 - 524 MB / 500 MiB - 128000 sectors (RO), sector size=4096
+Disk /dev/rdisk4 - 4000 GB / 3725 GiB - 7813969920 sectors, sector size=512
+
+Partition table type (auto): EFI GPT
+Disk /dev/rdisk4 - 4000 GB / 3725 GiB
+Partition table type: EFI GPT
+
+Analyse Disk /dev/rdisk4 - 4000 GB / 3725 GiB - 7813969920 sectors
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=7813969919 (expected 7813969919)
+hdr_lba_start=34
+hdr_lba_end=7813969886
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 2 P Mac HFS                   409640 7813707735 7813298096
+Current partition structure:
+ 1 P EFI System                    40     409639     409600 [EFI System Partition]
+No HFS or HFS+ structure
+ 2 P Mac HFS                   409640 7813707735 7813298096
+ 2 P Mac HFS                   409640 7813707735 7813298096
+
+search_part()
+Disk /dev/rdisk4 - 4000 GB / 3725 GiB - 7813969920 sectors
+FAT32 at 40/0/1
+check_FAT: Unusual media descriptor (0xf0!=0xf8)
+FAT1 : 32-3182
+FAT2 : 3183-6333
+start_rootdir : 6334 root cluster : 2
+Data : 6334-409599
+sectors : 409600
+cluster_size : 1
+no_of_cluster : 403266 (2 - 403267)
+fat_length 3151 calculated 3151
+heads/cylinder 16 (FAT) != 1 (HD)
+sect/track 32 (FAT) != 1 (HD)
+
+FAT32 at 40/0/1
+     EFI System                    40     409639     409600 [EFI System Partition] [EFI]
+     FAT32, blocksize=512, 209 MB / 200 MiB
+file_pread(6,16,buffer,409703(409703/0/1)) read err: Input/output error
+file_pread(6,1,buffer,409704(409704/0/1)) read err: Input/output error
+file_pread(6,8,buffer,409719(409719/0/1)) read err: Input/output error
+file_pread(6,11,buffer,409766(409766/0/1)) read err: Input/output error
+file_pread(6,16,buffer,409705(409705/0/1)) read err: Input/output error
+file_pread(6,1,buffer,409705(409705/0/1)) read err: Input/output error
+file_pread(6,1,buffer,409727(409727/0/1)) read err: Input/output error
+file_pread(6,1,buffer,409777(409777/0/1)) read err: Input/output error
+file_pread(6,16,buffer,409706(409706/0/1)) read err: Input/output error
+SIGINT detected! PhotoRec has been killed.
+file_pread(6,1,buffer,409706(409706/0/1)) read err: Input/output error
+SIGHUP detected! PhotoRec has been killed.

@@ -1,49 +1,53 @@
-import { Sparkles, Palette, Star, Flower2, Scissors, GraduationCap } from 'lucide-react'
-import type { LucideIcon } from 'lucide-react'
+
 
 type Service = {
-  icon: LucideIcon
   title: string
   description: string
   price: string
+  src: string 
 }
 
 const SERVICES: Service[] = [
   {
-    icon: Sparkles,
+    
     title: 'Bridal Makeup',
     description: 'Full glam for your most important day.',
     price: '$250',
+    src: '/images/bridal_makeup.JPEG',
   },
   {
-    icon: Palette,
+    
     title: 'Artistic & Editorial Makeup',
     description: 'Creative looks for photoshoots, fashion and art.',
     price: '$180',
+    src: '/images/editorial_makeup.jpg',
   },
   {
-    icon: Star,
+    
     title: 'Special Events',
     description: 'Look stunning for any occasion.',
     price: '$120',
+    src: '/images/event_makeup.jpg',
   },
   {
-    icon: Flower2,
+    
     title: 'Bridal Hair',
     description: 'Elegant updos and styles for your wedding day.',
     price: '$200',
+    src: '/images/bridal_hair2.jpg',
   },
   {
-    icon: Scissors,
     title: 'Hair Styling',
     description: 'From sleek blowouts to textured waves.',
     price: '$90',
+    src: '/images/2.jpeg',
   },
   {
-    icon: GraduationCap,
+    
     title: 'Makeup Masterclass',
     description: 'Learn professional techniques to elevate your everyday look.',
     price: '$150 per person',
+    src: '/images/masterclass.jpg',
   },
 ]
 
@@ -67,8 +71,15 @@ export function Services() {
               key={service.title}
               className="group flex flex-col bg-background p-8 transition-colors hover:bg-secondary lg:p-10"
             >
-              <service.icon className="size-6 text-gold" strokeWidth={1.25} />
+             
               <h3 className="mt-6 font-serif text-2xl text-foreground">{service.title}</h3>
+              {service.src && (
+                <img
+                  src={service.src}
+                  alt={service.title}
+                  className="mt-4 w-full object-cover h-100 rounded-lg transition-transform duration-700 group-hover:scale-105"
+                />
+              )}
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                 {service.description}
               </p>
