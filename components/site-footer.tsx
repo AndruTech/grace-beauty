@@ -1,6 +1,6 @@
 import { InstagramIcon, TikTokIcon, YouTubeIcon, WhatsAppIcon } from '@/components/brand-icons'
 
-const COLUMNS = [
+/*const COLUMNS = [
   {
     heading: 'Services',
     links: ['Bridal Makeup', 'Artistic Makeup', 'Special Events', 'Bridal Hair', 'Hair Styling'],
@@ -13,7 +13,7 @@ const COLUMNS = [
     heading: 'Learn',
     links: ['Online Courses', 'Masterclasses', 'YouTube', 'Tutorials', 'Journal'],
   },
-]
+]*/
 
 const SOCIALS = [
   { icon: InstagramIcon, label: 'Instagram', href: 'https://www.instagram.com/maakeupbytat?igsh=MWhwcGttZ3U2amtteQ==' },
@@ -27,7 +27,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-4">
-          {COLUMNS.map((col) => (
+          {/*{COLUMNS.map((col) => (
             <div key={col.heading}>
               <h3 className="mb-5 text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-gold">
                 {col.heading}
@@ -45,7 +45,7 @@ export function SiteFooter() {
                 ))}
               </ul>
             </div>
-          ))}
+          ))}*/}
 
           <div>
             <h3 className="mb-5 text-[0.7rem] font-semibold uppercase tracking-[0.25em] text-gold">

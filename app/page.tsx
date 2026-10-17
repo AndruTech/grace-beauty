@@ -1,14 +1,20 @@
-import { WhatsAppButton} from '@/components/whatsapp-button'
+import { WhatsAppButton } from '@/components/whatsapp-button'
 import { SiteHeader } from '@/components/site-header'
 import { Hero } from '@/components/hero'
-import { Services } from '@/components/services'
+import { InPersonMasterclass } from '@/components/in-person-masterclass'
 import { Portfolio } from '@/components/portfolio'
-import { Products } from '@/components/products'
-import { Courses } from '@/components/courses'
 import { Testimonials } from '@/components/testimonials'
-import { BookingCta } from '@/components/booking-cta'
-import { Newsletter } from '@/components/newsletter'
+
 import { SiteFooter } from '@/components/site-footer'
+
+/* COMPONENTES DESACTIVADOS TEMPORALMENTE:
+import { Services } from '@/components/services'
+import { Products } from '@/components/products'
+import { Newsletter } from '@/components/newsletter'
+import { Courses } from '@/components/courses'
+import { BookingCta } from '@/components/booking-cta'
+*/
+
 
 export default function Home() {
   return (
@@ -16,13 +22,21 @@ export default function Home() {
       <SiteHeader />
       <main>
         <Hero />
-        <Services />
+        <InPersonMasterclass />
+        {/* Enfoque principal: Curso Presencial */}
+        {/* <Courses />*/}
+        
+        {/* Muestra de trabajos / Portafolio */}
         <Portfolio />
-        <Products />
-        <Courses />
+        
+        {/* Testimonios para dar confianza */}
         <Testimonials />
-        <BookingCta />
-        <Newsletter />
+       {/*  <BookingCta />*/}
+
+        {/* === SECCIONES EN PAUSA (Futura V2) === */}
+        {/* <Services /> */}
+        {/* <Products /> */}
+        {/* <Newsletter /> */}
       </main>
       <SiteFooter />
       <WhatsAppButton />

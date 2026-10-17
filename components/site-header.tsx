@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
+
 type MegaColumn = {
   heading: string
   links: string[]
@@ -16,24 +17,24 @@ type NavItem = {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  {
+  /*{
     label: 'Services',
     href: '#services',
     columns: [
       { heading: 'Makeup', links: ['Bridal Makeup', 'Artistic Makeup', 'Special Events'] },
       { heading: 'Hair', links: ['Bridal Hair', 'Hair Styling'] },
     ],
-  },
+  },*/
   { label: 'Portfolio', href: '#portfolio' },
-  {
+  /*{
     label: 'Shop',
     href: '#shop',
     columns: [
       { heading: 'Organic Products', links: ['Lip Balm', 'Face Cream', 'Hair Oil'] },
       { heading: 'Professional Accessories', links: ['Brush Sets', 'Tools', 'Gift Cards'] },
     ],
-  },
-  { label: 'Courses', href: '#courses' },
+  },*/
+  { label: 'Masterclass', href: '#courses' },
 ]
 
 export function SiteHeader() {
@@ -130,10 +131,12 @@ export function SiteHeader() {
           </div>
 
           <a
-            href="#booking"
-            className="hidden rounded-full bg-foreground px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-background transition-opacity hover:opacity-80 lg:inline-block"
-          >
-            Book Now
+  href="https://www.trybooking.com/au/event/1667399"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center bg-primary text-primary-foreground text-sm font-medium px-5 py-2.5 rounded-full shadow-sm hover:opacity-95 transition-all"
+>
+            Reserve Your Spot
           </a>
 
           <button
@@ -191,7 +194,7 @@ export function SiteHeader() {
                 onClick={() => setMobileOpen(false)}
                 className="rounded-full bg-foreground px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-background"
               >
-                Book Now
+                Reserve Your Spot
               </a>
             </div>
           </div>
